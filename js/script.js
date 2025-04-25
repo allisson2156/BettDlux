@@ -37,7 +37,7 @@ function onScanSuccess(decodedText, decodedResult) {
       fps: 10,                // Frames por segundo
       qrbox: { width: qrSize, height: qrSize }, // Tamanho do quadrado de detecção
     };
-    const cameraConfig = { facingMode: "environment" }; // Tenta usar câmera traseira
+    const cameraConfig = { facingMode: "user" }; // Configuração da câmera (frontal)
   
     // Inicia a leitura automaticamente
     html5QrCode.start(
