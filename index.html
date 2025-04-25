@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leitor de QR Code Bett</title>
+  <!-- Inclusão da biblioteca html5-qrcode via CDN -->
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <!-- Link para o arquivo de estilos CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body onclick="document.documentElement.requestFullscreen()">
+  <div class="wrapper">
+  <header>
+    <h1>Bett 2025</h1>
+  </header>
+<div class="main">
+  <div class="retangulos">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <h1 id="info-titulo">Escaneie o QR Code para começar:</h1>
+ 
+  <!-- Div para exibir o preview da câmera -->
+  <div id="reader"></div>
+
+  <!-- Link para o arquivo JavaScript externo -->
+  <script src="js/script.js"></script>
+
+  <!-- Texto informativo em tom de cinza -->
+  <p id="info-qr">
+    Suas respostas serão coletadas para análise posterior.
+  </p>
+  <div class="retangulos">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+  <footer>
+    <img src="media/all-logos.svg" width="400">
+  </footer>
+</div>
+
+</body>
+</html>
